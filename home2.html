@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8"/>
+        <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        a{
+            text-decoration:none;
+            color:rgba(253, 253, 253, 0.911);
+            padding: 20px 5px;
+            display:block;
+            border-radius:3px;
+           
+        }
+        a:hover{background-color:rgba(36, 35, 35, 0.582);
+            display:block;
+           color:white;
+            border-radius:3px;
+            transition:all 2s
+            
+
+        }
+        label{
+            
+            padding: 15px;
+            position:absolute;
+            z-index:1;
+        }
+        
+
+        }
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        ul{
+            list-style:none;
+            top:80px;
+            position:absolute;
+            width: 100%
+        }
+        
+        img{height: 55px;
+            
+        }
+        input[type="checkbox"]
+        {
+        display:none
+    }
+
+    nav {
+        background-color: rgba(16,16,16,.5);
+        width:150px;
+        height:100%;
+        border-radius:3px;
+        position:absolute;
+        left:-160px;
+        transition:all 1.5s;
+        box-shadow: 10px 0px 10px rgba(36, 35, 35, 0.808);
+    }
+    input[type="checkbox"]:checked ~ nav {
+        transform: translateX(160px);
+    }
+    
+        </style>
+</head>
+<body>
+    
+    <input type="checkbox" id="chec">
+    <label for="chec">
+        <img src="_img/menu_icone.png"> 
+    </label>
+    <nav class ="menu">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">PROGRAMAS</a></li>
+            <li><a href="">SERVIDOR</a></li>
+            <li><a href="">TUTORIAIS</a></li>
+            <li><a href="">TERCEIROS</a></li>
+           <li><a href="">CHEGADA DE ENCOMENDA</a></li>
+
+
+</ul>
+            
+    </nav>
+</body>
+    </html>
