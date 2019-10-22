@@ -10,25 +10,33 @@
         }
         .menu ul li:hover > ul {
     display:block;
+                                }
+.labelchamado{
+    width: 150px;
+    height: 25px;
+border-radius:3px;
+box-shadow: 5px 5px 20px rgba(59, 58, 58, 0.158);
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 15.5%;
+       margin-left: 34%;
 }
-
 .chamados{
     
     display:block;
        position:absolute;
-       margin-top: 15%;
-       margin-left: 15%;
-
-}
+       margin-top: 14%;
+       margin-left: 33.5%;
+       font-family: Arial, Helvetica, sans-serif;
+         }
    
-        a{
+    a{
             text-decoration:none;
             color:rgba(253, 253, 253, 0.911);
             padding: 28px 5px;
             display:block;
             border-radius:3px;
-            }
-            .barra{
+     }
+    .barra{
                 background-color:rgba(36, 35, 35, 0.808);
                 width: 100%;
                 height: 0.2cm;
@@ -45,7 +53,7 @@
             transition:all 0.7s
             
 
-        }
+            }
         label{
             
             padding: 15px;
@@ -119,11 +127,6 @@
         <ul>
             <li><a href="home.html">HOME</a></li>
             <li><a href="programas.html">PROGRAMAS</a></li>
-            <li><a href="tutoriais.html">TUTORIAIS </a></li>
-            <ul>
-                <li><a href="">LINUX</a></li>
-                
-            </ul>
             <li><a href="terceiros.html">TERCEIROS</a></li>
             <li><a href="externos.html">EXTERNOS</a></li>
 
@@ -136,6 +139,10 @@
     </div>
     <div class="chamados">
       <b> CHAMADOS TERCEIROS </b>
+    </div>
+      
+      <label for="chamado"></label>
+      <input id="chamado" name="numero do chamado"  class="labelchamado" required="required" type="text" value="" placeholder="chamado">
     </div>
 </body>
     </html>
