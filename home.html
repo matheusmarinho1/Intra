@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8"/>
+        <style type="text/css">
+        
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .menu ul li:hover > ul {
+    display:block;
+}
+   .informativo{
+       display:block;
+       position:absolute;
+       margin-top:15%;
+       margin-left: 15%;
+
+
+   }
+        a{
+            text-decoration:none;
+            color:rgba(253, 253, 253, 0.911);
+            padding: 28px 5px;
+            display:block;
+            border-radius:3px;
+            }
+            .barra{
+                background-color:rgba(36, 35, 35, 0.808);
+                width: 100%;
+                height: 0.2cm;
+                position: absolute;
+                z-index:3;
+                margin-top:11.5%;
+                transition:all 0.4s;
+
+            }
+        a:hover{background-color:rgba(36, 35, 35, 0.582);
+            display:block;
+           color:white;
+            border-radius:1px;
+            transition:all 0.7s
+            
+
+        }
+        label{
+            
+            padding: 15px;
+            position:absolute;
+            z-index:3;
+        }
+        
+.menu ul ul {
+    display:none;
+    padding-left:150px;
+    
+}
+    
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        ul{
+            
+            top:80px;
+            position:absolute;
+            width: 100%
+        }
+        
+        img{height: 55px;
+            
+        }
+        input[type="checkbox"]
+        {
+        display:none
+    }
+    .logofleming{
+        height: 150px;
+        width:320px;
+        position:absolute;
+        margin-left: 33%;
+    }
+
+    nav {
+        background-color: rgba(16,16,16,.5);
+        width:150px;
+        height:100%;
+        border-radius:3px;
+        position:absolute;
+        left:-160px;
+        transition:all 0.4s;
+        box-shadow: 10px 0px 10px rgba(36, 35, 35, 0.808);
+    }
+    input[type="checkbox"]:checked ~ nav {
+        transform: translateX(160px);
+        
+
+    }
+    input[type="checkbox"]:checked ~ .barra {
+        transform: translateX(150px);
+        
+
+    }
+    
+    
+        </style>
+</head>
+<img class="logofleming" src="_img/Fleming Logo1.png"> 
+<body>
+    
+    <input type="checkbox" id="chec">
+    <label for="chec">
+        <img src="_img/menu_icone.png"> 
+    </label>
+    <nav class="menu" >
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="programas.html">PROGRAMAS</a></li>
+            <li><a href="tutoriais.html">TUTORIAIS </a></li>
+            <ul>
+                <li><a href="">LINUX</a></li>
+                
+            </ul>
+            <li><a href="terceiros.html">TERCEIROS</a></li>
+            <li><a href="externos.html">EXTERNOS</a></li>
+
+
+</ul>
+            
+    </nav>
+    <div class="barra">
+
+    </div>
+    <div class="informativo">
+       <b> Informativo:</b>
+    </div>
+   </body>
+    </html>
